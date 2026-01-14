@@ -9,13 +9,13 @@ const StudentList = () => {
     e.preventDefault();
     if (newName.trim()) {
       addNewStudent(newName);
-      setNewName(""); // Clear input after adding
+      setNewName(""); 
     }
   };
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* Add New Student Form */}
+      
       <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 mb-8">
         <h3 className="text-lg font-bold mb-4">Add New Student to Registry</h3>
         <form onSubmit={handleAddSubmit} className="flex gap-2">

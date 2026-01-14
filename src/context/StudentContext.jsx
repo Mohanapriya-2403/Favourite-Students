@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 export const StudentContext = createContext();
 
 export const StudentProvider = ({ children }) => {
-  // Use state for allStudents so we can add to it
+  
   const [allStudents, setAllStudents] = useState([
     { id: 101, name: "MohanaPriya" },
     { id: 103, name: "Keerthana Raji" },
@@ -12,7 +12,7 @@ export const StudentProvider = ({ children }) => {
 
   const [favorites, setFavorites] = useState([]);
 
-  // Function to add a brand new student to the master list
+  
   const addNewStudent = (name) => {
     const newId = allStudents.length > 0 ? Math.max(...allStudents.map(s => s.id)) + 1 : 101;
     setAllStudents([...allStudents, { id: newId, name }]);
