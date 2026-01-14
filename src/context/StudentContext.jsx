@@ -6,16 +6,8 @@ export const StudentProvider = ({ children }) => {
   // Use state for allStudents so we can add to it
   const [allStudents, setAllStudents] = useState([
     { id: 101, name: "MohanaPriya" },
-
-    { id: 102, name: "Santhosh" },
-
     { id: 103, name: "Keerthana Raji" },
 
-    { id: 104, name: "ArumanSalik" },
-
-    { id: 105, name: "MahaLakshmi" },
-
-    { id: 106, name: "Selva Mani" },
   ]);
 
   const [favorites, setFavorites] = useState([]);
